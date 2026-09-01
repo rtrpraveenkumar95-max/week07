@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 
   # Automatically trigger the workflow for updates to main
+  # Week 07 CI pipeline trigger verification
   push:
     branches:
       - main
@@ -168,4 +169,3 @@ jobs:
         run: |
           docker push \
             ${{ vars.ACR_LOGIN_SERVER }}/${{ matrix.image }}:latest
-            
